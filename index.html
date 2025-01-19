@@ -10,37 +10,27 @@
   </head>
 
   <body>
+    <h1>World Clock</h1>
     <select name="contries" id="contries">
       <option value="">Select a city</option>
-      <option value="paris">Paris 🇫🇷</option>
-      <option value="tokyo">Tokyo 🇯🇵</option>
+      <option value="losangeles">Los angeles 🇺🇸</option>
       <option value="sydney">Sydney 🇦🇺</option>
+      <option value="tokyo">Tokyo 🇯🇵</option>
+      <option value="paris">Paris 🇫🇷</option>
     </select>
 
-    <script>
-      function ShowTime(event) {
-        if (event.target.value === "paris") {
-          alert(
-            `It is ${moment()
-              .tz("Europe/Paris")
-              .format("LLLL")} in Europe/Paris`
-          );
-        }
-        if (event.target.value === "tokyo") {
-          alert(
-            `It is ${moment().tz("Asia/Tokyo").format("LLLL")} in Asia/Tokyo`
-          );
-        }
-        if (event.target.value === "sydney") {
-          alert(
-            `It is ${moment()
-              .tz("Australia/Sydney")
-              .format("LLLL")} in Australia/Sydney`
-          );
-        }
-      }
+    <div class="city">
+      <h2>Los angeles 🇺🇸</h2>
+      <div class="date">January 19th 2025</div>
+      <div class="time">05:45:22 AM</div>
+    </div>
 
-      document.getElementById("contries").addEventListener("change", ShowTime);
-    </script>
+    <script></script>
+    <footer>
+      This project was coded by Fangycu
+      <a href="https://worldclock555.netlify.app/" target="_blank">
+        open source on Github
+      </a>
+    </footer>
   </body>
 </html>
